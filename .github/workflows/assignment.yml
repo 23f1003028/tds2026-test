@@ -1,0 +1,18 @@
+name: IITM Assignment Workflow
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch: # Allows you to trigger it manually
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 23f1003028@ds.study.iitm.ac.in
+        run: |
+          echo "GitHub Action successfully triggered for 23f1003028@ds.study.iitm.ac.in"
+          echo "Current timestamp: $(date)"
